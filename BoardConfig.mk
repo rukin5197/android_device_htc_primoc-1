@@ -58,7 +58,7 @@ ARCH_ARM_HAVE_NEON := true
 ENABLE_WEBGL := true
 TARGET_FORCE_CPU_UPLOAD := true
 DYNAMIC_SHARED_LIBV8SO := true
-#TARGET_USES_PMEM := true
+TARGET_USES_PMEM := true
 
 # Wifi related defines
 WIFI_BAND                        := 802_11_ABG
