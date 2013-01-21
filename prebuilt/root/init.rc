@@ -5,10 +5,12 @@ on early-init
     start ueventd
 
 # create mountpoints
-    mkdir /mnt 0775 root system
-    mkdir -p /storage/primary/legacy 0555 root root
+    mkdir /storage 0555 root root
+    mkdir /storage/primary 0555 root root
+    mkdir /storage/primary/legacy 0555 root root
     export EXTERNAL_STORAGE /storage/primary/legacy
 
+    # Support legacy paths
     symlink /storage/primary/legacy /sdcard
     symlink /storage/primary/legacy /mnt/sdcard
     symlink /storage/primary/legacy /storage/sdcard0
