@@ -12,12 +12,20 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ * */
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME "HTC One V"
-#define BTA_DISABLE_DELAY 1000 /* in milliseconds */
+#define BTM_DEF_LOCAL_NAME "HTC Vision"
+
+// Networking, Capturing, Object Transfer
+// MAJOR CLASS: COMPUTER
+// MINOR CLASS: PALM SIZE PC/PDA
+#define BTA_DM_COD {0x1A, 0x01, 0x14}
+
+#define BTIF_HF_SERVICES (BTA_HSP_SERVICE_MASK)
+#define BTIF_HF_SERVICE_NAMES  { BTIF_HSAG_SERVICE_NAME }
+#define PAN_NAP_DISABLED TRUE
 
 #endif
